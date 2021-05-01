@@ -55,7 +55,9 @@ const cappucino = [
   },
 ];
 
-// document.querySelector('.drink__info').innerHTML =Layer(cappucino);
+const layerElm = document.querySelector('.drink__info');
+document.querySelector('.drink__info').innerHTML = `<h3>Cappuccino</h3>`;
 
-const appElm = document.querySelector('.drink__info');
-appElm.appendChild(Layer(cappucino));
+for (let i = 0; i < cappucino.length; i += 1) {
+  layerElm.innerHTML += Layer(cappucino[i]);
+}
