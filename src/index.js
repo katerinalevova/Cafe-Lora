@@ -55,4 +55,7 @@ const cappucino = [
   },
 ];
 
-document.querySelector('.drink__info').innerHTML = Layer(cappucino);
+// document.querySelector('.drink__info').innerHTML =Layer(cappucino);
+
+const appElm = document.querySelector('.drink__info');
+appElm.appendChild(Layer(cappucino));
