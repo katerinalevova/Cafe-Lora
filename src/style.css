@@ -267,12 +267,12 @@ nav a:hover {
 }
 .napisVgalerii {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-shadow: 1px 1px black;
   backdrop-filter: blur(2px);
   text-align: center;
   max-width: 100%;
-  padding: 2% 10%;
+  padding: 1% 10%;
 }
 /*
 backdrop-filter: brightness(60%);
