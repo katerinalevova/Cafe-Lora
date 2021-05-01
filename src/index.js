@@ -1,4 +1,5 @@
 import './style.css';
+import { Layer } from './Layer/index.js';
 
 console.log('funguju!');
 
@@ -36,3 +37,22 @@ const plnitHrnecek = () => {
   }
 };
 document.querySelector('.order-btn').addEventListener('click', plnitHrnecek);
+
+//Komponenta na vrstvy cappucina
+
+const cappucino = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+document.querySelector('.drink__info').innerHTML = Layer(cappucino);
